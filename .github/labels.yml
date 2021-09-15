@@ -1,17 +1,72 @@
+# define labels including kinds / areas etc 
+kind:
+  - "api-change"
+  - "bug"
+  - "cleanup"
+  - "design"
+  - "documentation"
+  - "ecosystem-enablement"
+  - "enhancement"
+  - "example"
+  - "feature"
+  - "flake"
+  - "friction"
+  - "mesos-flake"
+  - "new-api"
+  - "postmortem"
+  - "support"
+  - "technical-debt"
+  - "velocity-improvement"
+  - "workaround-removal"
 
-# labels to be used with /area command
 area:
-  - 'bug'
-  - 'important'
+  - 'HA'
+  - 'admin'
+  - 'api'
+  - 'app-config-deployment'
+  - 'auth'
+  - 'autoscaling'
+  - 'batch'
+  - 'build-release'
+  - 'cadvisor'
+  - 'cloudprovider'
+  - 'cluster-federation'
+  - 'cluster-lifecycle'
+  - 'devexp'
+  - 'downward-api'
+  - 'extensibility'
+  - 'images-registry'
+  - 'introspection'
+  - 'isolation'
+  - 'kubelet-api'
+  - 'logging'
+  - 'monitoring'
+  - 'networking'
+  - 'reliability'
+  - 'scheduling'
+  - 'security'
+  - 'storage'
+  - 'swagger'
+  - 'test'
+  - 'logging'
+  - 'usability'
+  - 'volumes'
 
-# File globs for PR labeler
-tests:
-  - '**/*.test.ts'
+
+src:
+  - '**/*.go'
+  
+unit_tests:
+  - '**/*_unit_test.go'
+
+inte_tests:
+  - '**/*_intg_test.go'
 
 priority:
-  - 'low'
-  - 'medium'
-  - 'high'
+  - 'P0'
+  - 'P1'
+  - 'P2'
+  - 'P3'
 
 labels:
   - name: 0 - Backlog
