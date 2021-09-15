@@ -1,4 +1,4 @@
-name: "Prow github actions"
+name: "React to commands in comments"
 on:
   issue_comment:
     types: [created]
