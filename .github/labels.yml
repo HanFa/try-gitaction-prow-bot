@@ -8,6 +8,11 @@ area:
 tests:
   - '**/*.test.ts'
 
+priority:
+  - 'low'
+  - 'medium'
+  - 'high'
+
 labels:
   - name: 0 - Backlog
     color: CCCCCC
