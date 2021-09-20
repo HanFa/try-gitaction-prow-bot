@@ -2,10 +2,13 @@ name: "Label PRs from globs"
 on:
 - pull_request_target
 
+github-cicd:
+- .github/**/*
+
 jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/labeler@main
+    - uses: actions/labeler@v3
       with:
         repo-token: "${{ secrets.BOT_GITHUB_TOKEN }}"
